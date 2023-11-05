@@ -1,0 +1,20 @@
+.progressBar {
+    background: #3b444c;
+    border-radius: 4px;
+    height: 8px;
+    width: 100%;
+    position: relative;
+}
+
+.progressBarCurrent {
+    height: 100%;
+    border-radius: 4px;
+    background: #0055cc;
+    transition-duration: .14s;
+    transition-property: width, background;
+    transition-timing-function: ease-in;
+}
+
+.progressBarCurrent.green {
+    background: #4bce97;
+}

@@ -1,0 +1,51 @@
+@import "../../../../styles/variables";
+
+.card {
+  background-color: $dark-card-color;
+  border: 1px solid hsl(0, 0%, 70%);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1em;
+  margin-bottom: 2vh;
+  margin-right: 1em;
+  max-width: 300px;
+  min-width: 272px;
+  padding: 0.5rem 0.5rem;
+  // position: relative;
+}
+
+.cardName {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.addTask {
+  cursor: pointer;
+  padding: 0.5rem 0.5rem;
+  border-radius: 10px;
+  margin-top: 0.3rem;
+  display: flex;
+  align-items: center;
+  align-content: center;
+
+  &:hover {
+    transition: all 0.5ms linear;
+    background-color: #3e454c;
+  }
+}
+
+.addTaskText {
+  margin-top: 3px;
+}
+
+@media screen and (max-width: 425px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vh;
+    max-width: 300px;
+    min-width: 94%;
+    position: relative;
+  }
+}

@@ -1,0 +1,40 @@
+.description {
+    position: relative;
+}
+
+.descriptionTitleContainer {
+    display: flex;
+    align-content: center;
+    align-items: end;
+    gap: 0.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.descriptionTitle {
+    font-size: 20px;
+}
+
+.saveBtn {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1.3rem ;
+    background-color: #0c66e4;
+    border-radius: 2px;
+    color: #fff;
+
+    &:hover {
+        transition: all 0.1s linear;
+        background-color: #3a80e2;
+    }
+}
+
+.defaultEditor {
+    background-color: #3b444c;
+    cursor: pointer;
+    padding: 0.5rem 0 0 0.5rem;
+    height: 60px;
+
+    &:hover {
+        transition: all 0.1s linear;
+        background-color: #4b5660;
+    }
+}

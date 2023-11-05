@@ -1,0 +1,20 @@
+.taskNameForm {
+    display: flex;
+    align-content: center;
+}
+
+.inputTaskName {
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 100%;
+    height: 25px;
+    padding: 0 0.3rem;
+    margin-left: 0.5rem;
+    margin-top: 1px;
+
+    &:focus {
+        outline: 2px solid #85b8ff;
+        background-color: #22272b;
+    }
+}

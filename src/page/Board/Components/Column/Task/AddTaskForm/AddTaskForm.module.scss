@@ -1,0 +1,31 @@
+@import '../../../../../../styles/variables';
+
+.addNewTaskForm {
+    width: 100%;
+}
+
+.addTaskWrapper {
+    margin: 0.3rem 0 0.3rem 0;
+}
+
+.addTaskTextArea {
+    background-color: $dark-card-text-bg;
+    padding: 8px 8px 0 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 92%;
+    height: auto;
+    overflow: hidden;
+    line-height: 1rem;
+}
+
+.addTaskButton {
+    background-color: #0c66e4;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    // margin-top: 0.5rem;
+
+    &:hover {
+        background-color: #2674e0;
+    }
+}

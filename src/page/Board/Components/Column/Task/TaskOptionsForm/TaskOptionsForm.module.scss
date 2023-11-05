@@ -1,0 +1,47 @@
+.taskOptions {
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    gap: 0.5rem;
+    align-items: flex-start;
+}
+
+.bg {
+    z-index: 1;
+    position: fixed;
+    top: 50px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.633);
+}
+
+.taskOptionsList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 6px;
+}
+
+.taskOptionItem {
+    border-radius: 3px;
+    padding: 6px 12px 6px 10px;
+    background-color: #2c333a;
+    margin-bottom: 4px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #3e4852;
+    }
+}
+
+.addTaskButton {
+    background-color: #0c66e4;
+    padding: 0.38rem 1rem;
+    border-radius: 4px;
+    margin-top: 6px;
+
+    &:hover {
+        background-color: #2674e0;
+    }
+}

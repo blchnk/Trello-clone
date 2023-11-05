@@ -1,0 +1,59 @@
+@import '../../../../../styles/variables';
+
+.taskItem {
+    padding: 10px 8px;
+    background-color: #32383e;
+    border-radius: 10px;
+    margin: 8px 0 0 0;
+    background-color: $dark-card-text-bg;
+    cursor: pointer !important;
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+        // transition: all 0.5ms linear;
+        // background-color: #3e454c;
+        outline: 2px solid #0055cc;
+    }
+}
+
+.taskTitle {
+    cursor: pointer !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.activeTask {
+    z-index: 5;
+}
+
+.taskItemText {
+    word-wrap: break-word;
+}
+
+.taskEditIcon {
+
+    &:hover {
+        border-radius: 100%;
+        background-color: gray;
+    }
+}
+
+.iconHidden {
+    display: none;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.365);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

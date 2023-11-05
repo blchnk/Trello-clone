@@ -1,0 +1,12 @@
+.cardsWrapper {
+  align-items: flex-start;
+  display: flex;
+  overflow: auto;
+}
+
+.workspaceName {
+  font-weight: 700;
+  font-size: 24px;
+  color: white;
+  margin-bottom: 1rem;
+}

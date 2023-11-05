@@ -1,0 +1,103 @@
+.bg {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.666);
+    display: flex;
+    justify-content: center;
+    // align-items: flex-start;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.taskDetailsBody {
+    margin: auto;
+    // margin: 30px 0 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 600px;
+    background-color: #323940;
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+.detailsFormSector {
+    margin: 0 0 15px 0;
+
+    &:last-child {
+        margin: 0;
+    }
+}
+
+.descriptionTitle {
+    font-size: 20px;
+    line-height: 1.1;
+}
+
+.windowMainCol {
+    float: left;
+    width: 78%;
+}
+
+.windowSidebar {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10px;
+    padding-top: 10px;
+    position: relative;
+}
+
+.windowSidebarTitle {}
+
+.windowSidebarContentBody {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 10px;
+}
+
+.sidebarContentBg {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    background-color: #47525b;
+
+    &:hover {
+        transition: all linear 0.1s;
+        background-color: #54616c;
+    }
+}
+
+.sidubarContentItem {}
+
+@media only screen and (max-width: 650px) {
+    .taskDetailsBody {
+        margin-top: 20px;
+    }
+
+    .windowSidebar {
+        clear: both;
+        float: none;
+        margin: 20px 0;
+        padding: 0;
+        align-items: baseline;
+        width: auto;
+    }
+
+    .windowSidebarContentBody {
+        display: flex;
+        gap: 0.5rem;
+        margin-top: 10px;
+
+        flex-direction: row;
+    }
+
+    .windowMainCol {
+        float: none;
+        width: 100%;
+    }
+}

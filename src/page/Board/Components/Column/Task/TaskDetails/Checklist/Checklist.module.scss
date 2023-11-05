@@ -1,0 +1,56 @@
+.checklistBody {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+.checklistNameBody {
+  display: flex;
+  align-items: center;
+}
+
+.checklistHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  gap: 0.5rem;
+}
+
+.deleteChecklistBtn {
+  background-color: #3b444c;
+  padding: 0.4rem 1rem;
+  width: 100;
+
+  &:hover {
+    cursor: pointer;
+    transition: 0.1s linear all;
+    background-color: #414c55;
+  }
+}
+
+.progressBarBody {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 0 5px 0;
+}
+
+.progressBar {
+  width: 100%;
+}
+
+.addItemBtn {
+  background-color: #3b444c;
+  padding: 0.5rem 1rem;
+  width: 150px;
+  margin: 0.5rem 0;
+
+  &:hover {
+    transition: all linear 0.1s;
+    background-color: #414c55;
+  }
+}
