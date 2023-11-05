@@ -26,7 +26,8 @@ export default function Task({ taskItem, boardId, columnId, index }) {
             <div>
                 <Draggable draggableId={taskItem.taskId} index={index} id={taskItem.taskId}>
                     {(provided) => (
-                        <div className={taskOptions ? cx(style.taskItem, style.activeTask) : style.taskItem}
+                        <div
+                            className={taskOptions ? cx(style.taskItem, style.activeTask) : style.taskItem}
                             onMouseOver={() => setTaskOptionsIcon(true)}
                             onMouseOut={() => setTaskOptionsIcon(false)}
                             onClick={showTaskDetails}
@@ -34,7 +35,8 @@ export default function Task({ taskItem, boardId, columnId, index }) {
                             {...provided.draggableProps}
                             {...provided.dragHandleProps}>
                             <div className={style.taskTitle}>
-                                <span className={style.taskItemText}>
+                                <span
+                                    className={style.taskItemText}>
                                     {taskItem.taskName}
                                 </span>
                                 {

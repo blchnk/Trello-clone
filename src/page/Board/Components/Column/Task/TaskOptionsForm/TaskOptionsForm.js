@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {useDispatch} from "react-redux";
+import { useDispatch } from "react-redux";
 import style from './TaskOptionsForm.module.scss';
-import {deleteTask} from '../../../../../../actions/boardActions';
+import { deleteTask } from '../../../../../../actions/boardActions';
 
 export default function TaskOptionsForm(props) {
     const dispatch = useDispatch();
@@ -24,13 +24,19 @@ export default function TaskOptionsForm(props) {
 
     return (
         <>
-            <div className={style.bg}/>
-            <div className={style.taskOptions} ref={props.forwardRef}>
+            <div className={style.bg} />
+            <div
+                className={style.taskOptions}
+                ref={props.forwardRef}>
                 <ul className={style.taskOptionsList}>
-                    <li className={style.taskOptionItem} onClick={showTaskDetailsHandler}>
+                    <li
+                        className={style.taskOptionItem}
+                        onClick={showTaskDetailsHandler}>
                         Open card
                     </li>
-                    <li className={style.taskOptionItem} onClick={deleteTaskHandler}>
+                    <li
+                        className={style.taskOptionItem}
+                        onClick={deleteTaskHandler}>
                         Delete
                     </li>
                 </ul>
