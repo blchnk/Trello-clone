@@ -1,0 +1,23 @@
+.search {
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.searchInputBody {}
+
+.searchInput {
+    width: 0;
+    transition: all .3s ease;
+    border-bottom: 0px solid transparent;
+    
+    &::placeholder {
+        font-size: 15px;
+    }
+
+    &.showSearch {
+        width: 200px;
+        border-bottom: 1px solid white;
+    }
+}

@@ -4,24 +4,35 @@ import style from "./Board.module.scss";
 import { DragDropContext } from "react-beautiful-dnd";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
+import Search from "../../components/Search/Search";
 import {
   reorderColumn,
   reorderBetweenColumn,
 } from "../../actions/boardActions";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function Board() {
   const dispatch = useDispatch();
   const boards = useSelector((state) => state.boardReducer.boards);
   const { boardId } = useParams();
 
-  // useEffect(() => {
-  //   console.log('board is rendered');
-  // }, [])
+  const [textForSearch, setTextForSearch] = useState('');
 
   const shownBoards = boards.find((board) => {
     return board.boardId === boardId;
   });
+
+  // const filterTasks = (searchText) => {
+
+  // }
+
+  // useEffect(() => {
+  //   console.log(boards)
+  // }, [])
+
+  // useEffect(() => {
+  //   filterTasks(textForSearch);
+  // }, [textForSearch])
 
   const boardColumns = shownBoards?.boardColumns;
 
@@ -137,13 +148,18 @@ export default function Board() {
   return (
     <div className="container">
       <h1 className={style.workspaceName}>{shownBoards.boardName}</h1>
+      {/* <Search
+        textForSearch={textForSearch}
+        setTextForSearch={setTextForSearch}
+      /> */}
       <div className={style.cardsWrapper}>
         <DragDropContext onDragEnd={onDragEnd}>
-          {boardColumns?.map((item, key) => (
+          {boardColumns?.map(item => (
             <Column
-              key={key}
+              key={item.columnId}
               boardId={boardId}
-              columnItem={item} />
+              columnItem={item}
+            />
           ))}
         </DragDropContext>
       </div>

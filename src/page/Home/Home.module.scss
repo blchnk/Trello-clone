@@ -1,4 +1,12 @@
 .header {
   margin-bottom: 1rem;
-  font-size: 18px;
+  font-size: 35px;
+  text-align: center;
+}
+
+.boards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
 }

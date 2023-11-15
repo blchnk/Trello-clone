@@ -1,7 +1,7 @@
 import React from 'react';
 import BoardCard from './Components/BoardCard/BoardCard';
 import ModalCreateWorkspace from './Modals/ModalCreateWorkspace/ModalCreateWorkspace';
-import {useSelector} from 'react-redux';
+import { useSelector } from 'react-redux';
 import style from './Home.module.scss';
 
 export default function Home() {
@@ -11,10 +11,12 @@ export default function Home() {
     return (
         <>
             <div className='container'>
-                <h1 className={style.header}>BOARDS</h1>
+                <div className={style.boards}>
+                    <h1 className={style.header}>BOARDS</h1>
 
-                <BoardCard boards={boards}/>
-                {modalCreateWorkspace && <ModalCreateWorkspace/>}
+                    <BoardCard boards={boards} />
+                    {modalCreateWorkspace && <ModalCreateWorkspace />}
+                </div>
             </div>
         </>
     )

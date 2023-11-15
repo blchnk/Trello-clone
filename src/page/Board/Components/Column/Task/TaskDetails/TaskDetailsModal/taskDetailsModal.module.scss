@@ -11,6 +11,8 @@
     // align-items: flex-start;
     align-items: center;
     overflow-y: auto;
+    overflow-x: hidden;
+    align-items: center;
 }
 
 .taskDetailsBody {
@@ -76,7 +78,7 @@
 
 @media only screen and (max-width: 650px) {
     .taskDetailsBody {
-        margin-top: 20px;
+        // margin-top: 20px;
     }
 
     .windowSidebar {

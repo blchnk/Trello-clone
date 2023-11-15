@@ -141,12 +141,6 @@ export default function TaskDetailsModal({ task, boardId, columnId, forwardRef }
                                     Checklist
                                 </span>
                             </div>
-                            <div className={style.sidebarContentBg}>
-                                <span className={style.sidubarContentItem}>Attachment</span>
-                            </div>
-                            <div className={style.sidebarContentBg}>
-                                <span className={style.sidubarContentItem}>Labels</span>
-                            </div>
                         </div>
                         {
                             taskAddTaskChecklistModal &&

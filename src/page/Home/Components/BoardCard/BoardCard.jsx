@@ -15,23 +15,32 @@ export default function BoardCard(props) {
 
     return (
         <>
-            <ul className={style.cardsBody}>
+            <div className={style.cardsBody}>
                 {
-                    props.boards.map((item, key) =>
-                        <li className={style.card} key={key}>
-                            <Link className={style.link} style={{ margin: '0.5rem' }} to={`/board/${item.boardId}`}>
-                                <span>{item.boardName}</span>
-                            </Link>
-                        </li>
+                    props.boards.map(item =>
+                        <div key={item.boardId} className={style.cardWrapper}>
+                            <div className={style.card}>
+                                <Link
+                                    className={style.link}
+                                    to={`/board/${item.boardId}`}
+                                >
+                                    <span className={style.boardName}>{item.boardName}</span>
+                                </Link>
+                            </div>
+                        </div>
                     )
                 }
 
-                <li className={cx(style.card, style.createCard)} onClick={() => handleClick()}>
-                    <Link className={style.link}>
-                        <span className={style.centerSpan}>Create board</span>
-                    </Link>
-                </li>
-            </ul>
+                <div className={style.cardWrapper}>
+                    <div
+                        className={cx(style.card, style.createCard)}
+                        onClick={handleClick}>
+                        <Link className={style.link}>
+                            <span className={style.centerSpan}>Create board</span>
+                        </Link>
+                    </div>
+                </div>
+            </div>
         </>
     )
 }

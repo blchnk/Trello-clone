@@ -4,7 +4,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.365);
+    background-color: rgba(0, 0, 0, 0.466);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +13,7 @@
 .modalWrapper {
     display: flex;
     justify-content: center;
-    width: 60%;
+    width: 100%;
 }
 
 .header {
@@ -48,7 +48,7 @@
 
 .modal {
     background-color: #282e32;
-    width: 40%;
+    width: 25%;
     display: flex;
     flex-direction: column;
     border: #39424a solid 1px;
@@ -56,6 +56,14 @@
     box-shadow: var(--ds-shadow-overlay, 0px 8px 12px #091e4226, 0px 0px 1px #091e424f);
     padding: 10px 10px;
     color: #9fadbc;
+
+    @media (max-width: 1024px) {
+        width: 50%;
+    }
+
+    @media (max-width: 740px) {
+        width: 80%;
+    }
 }
 
 .createBoardImg {
